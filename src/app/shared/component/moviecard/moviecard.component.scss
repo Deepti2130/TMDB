@@ -1,0 +1,36 @@
+.movieimg{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.moviecard{
+  height: 400px;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.titleinfo{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #12185e;
+  width: 100%;
+}
+
+.overview{
+  position: absolute;
+  top:30%;
+  height: 70%;
+  background-color: #fff;
+  transform: scale(0);
+  opacity: 0;
+  overflow: auto;
+  padding: 30px;
+}
+
+.moviecard:hover .overview{
+  transform: scale(1);
+  opacity: 1;
+}
